@@ -99,5 +99,6 @@ def bisection_method(f, a, b, tol=1e-6):
     return c  # return the current root
 
 if __name__ == '__main__':
-    f = lambda x: x ** 4 + x**3 - 3*x**2
-    Run_Bisection_Method(f, -3, 2, 10**-10)
+    #f = lambda x: x ** 4 + x**3 - 3*x**2
+    f = lambda x: 6 * x ** 4 - 7 * x ** 3 - 2 * x + 1
+    Run_Bisection_Method(f, 0, 5, 10**-10)
